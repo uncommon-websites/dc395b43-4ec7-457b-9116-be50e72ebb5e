@@ -9,37 +9,34 @@
 	};
 
 	const faqs = [
-		{ q: "What can Memo do?", a: "Memo is designed to handle a variety of household tasks, from tidying up clutter to assisting in the kitchen. It learns from your habits to become more helpful over time." },
-		{ q: "Is Memo available for purchase?", a: "We are currently in the beta phase. You can sign up for our newsletter to get the latest updates on availability." },
-		{ q: "How much will a Memo cost?", a: "Pricing has not been announced yet. We aim to make Memo accessible to as many households as possible." },
-		{ q: "Privacy & Safety: Does Memo record my home?", a: "Memo uses sensors to navigate, but privacy is our top priority. Data is processed locally whenever possible, and we adhere to strict privacy standards." },
-		{ q: "Is Memo safe?", a: "Yes, Memo is built with multiple safety layers to ensure it operates safely around people and pets." },
-		{ q: "What is the Sunday Beta program?", a: "The Beta program allows early adopters to test Memo in their homes and provide feedback to help us improve the product." }
+		{ q: "What is CORELAX?", a: "CORELAX is Japan's first 24/7 unmanned recovery facility offering medical-grade AI massage chairs and oxygen capsules. Access anytime without appointments through our app-based QR entry system." },
+		{ q: "How does the unmanned system work?", a: "Simply use our app to check real-time availability, enter with your QR code, and enjoy unlimited access to all equipment. Our AI monitoring ensures safety and security 24/7, with daily staff cleaning visits." },
+		{ q: "What equipment is available?", a: "All our equipment is medical-grade certified: AI-powered massage chairs with customizable programs, oxygen capsules for recovery therapy, and vibration machines. Everything is included in your monthly membership." },
+		{ q: "Is it safe without staff present?", a: "Yes. We use QR code entry (members only), AI-equipped surveillance cameras, and real-time monitoring by headquarters. The facility is designed to be safer than traditional spas with professional security protocols." },
+		{ q: "How much does membership cost?", a: "Our standard membership is ¥1,960/month (tax included) with unlimited access. We offer special pre-registration discounts and promotional campaigns. Check our app for current offers." },
+		{ q: "Where are you located?", a: "Our first location is at Mukogaoka-Yuen Station (30 seconds walk) in Kawasaki. We're actively expanding across Tokyo and major metropolitan areas. Property owners can contact us for partnership opportunities." }
 	];
 
-    // Placeholder images since we don't have the assets
-    const heroImage = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop"; 
-    const kitchenImage = "https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=2670&auto=format&fit=crop";
-    const homeImage = "https://images.unsplash.com/photo-1484154218962-a1c002085d2f?q=80&w=2670&auto=format&fit=crop";
-    const learningImage = "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2670&auto=format&fit=crop";
-    const gloveImage = "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=2532&auto=format&fit=crop";
-    const robotHead = "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2670&auto=format&fit=crop";
-    const robotWheel = "https://images.unsplash.com/photo-1535378437323-9555f3e7f6aa?q=80&w=2670&auto=format&fit=crop";
-    const robotArm = "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2670&auto=format&fit=crop";
-    const robotDetail = "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=2670&auto=format&fit=crop";
+    // CORELAX images
+    const heroImage = "/generated/image-modern-minimalist-wellness-facility-inte-1765616904497-0.webp"; 
+    const massageChairImage = "/generated/image-urban-japanese-professional-in-business--1765616907940-1.webp";
+    const oxygenCapsuleImage = "/generated/image-sleek-oxygen-capsule-pod-in-a-clean-mode-1765616910624-2.webp";
+    const stressedCommuterImage = "/generated/image-tired-businessman-in-suit-walking-on-tok-1765616912876-3.webp";
+    const facilityExteriorImage = "/generated/image-modern-unmanned-facility-exterior-at-nig-1765616916062-4.webp";
+    const appImage = "/generated/image-close-up-of-person-using-smartphone-app--1765616918719-5.webp";
+    const securityImage = "/generated/image-high-tech-security-camera-with-ai-monito-1765616921219-6.webp";
+    const relaxingWomanImage = "/generated/image-young-japanese-professional-woman-in-cas-1765616923577-7.webp";
 
 </script>
 
 <!-- Header -->
-<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-cream/90 backdrop-blur-sm">
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white/90 backdrop-blur-sm border-b border-gray-100">
 	<div class="w-12">
-		<button class="w-8 h-8 flex items-center justify-center bg-dark text-white rounded-full">
-			<Plus size={20} />
-		</button>
+		<a href="#membership" class="text-xs font-medium text-gray-600 hover:text-dark transition-colors">Join</a>
 	</div>
-	<div class="text-sm font-bold tracking-widest uppercase">Sunday</div>
+	<div class="text-lg font-bold tracking-wider">CORELAX</div>
 	<div class="w-12 flex justify-end">
-		<button class="text-xs font-medium border border-gray-300 rounded-full px-3 py-1 hover:bg-gray-100">EN</button>
+		<button class="text-xs font-medium border border-gray-300 rounded-full px-3 py-1 hover:bg-gray-100">JP</button>
 	</div>
 </header>
 
@@ -47,17 +44,17 @@
 	<!-- Hero Section -->
 	<section class="container-custom mb-32">
 		<div class="flex flex-col items-center text-center mb-12">
-			<p class="text-xs text-gray-500 mb-4 max-w-xs">The future home robot<br>built for busy households</p>
-			<h1 class="text-6xl md:text-8xl font-medium tracking-tight mb-8">Say hello to Memo</h1>
+			<p class="text-xs text-gray-500 mb-4 max-w-xs">Medical-grade recovery<br>available 24/7, no appointments needed</p>
+			<h1 class="text-6xl md:text-8xl font-medium tracking-tight mb-8">Recover on<br>your schedule</h1>
 		</div>
 
 		<div class="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden mb-12 bg-gray-200">
-			<img src={heroImage} alt="Memo robot in kitchen" class="w-full h-full object-cover" />
+			<img src={heroImage} alt="CORELAX modern wellness facility interior" class="w-full h-full object-cover" />
 		</div>
 
 		<div class="max-w-3xl mx-auto text-center">
 			<p class="text-xl md:text-2xl leading-relaxed font-light text-gray-800">
-				Built for busy households, Memo works 24/7 to make your life lighter. Hand off your repetitive to-do's, so you can focus on what really matters.
+				Japan's first 24/7 unmanned recovery facility. Access medical-grade AI massage chairs and oxygen capsules anytime, without the premium spa price tag.
 			</p>
 		</div>
 	</section>
@@ -67,17 +64,17 @@
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 			<div class="max-w-sm">
 				<p class="text-sm leading-relaxed text-gray-600">
-					Robots should give you back what matters most — time. Watch how our team came together to work on this mission.
+					Urban professionals deserve daily recovery without the hassle of appointments or premium prices. See how we're building the future of wellness infrastructure across Japan.
 				</p>
 			</div>
 			<div class="relative aspect-video rounded-xl overflow-hidden bg-gray-800 group cursor-pointer">
-				<img src={kitchenImage} alt="Video thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity" />
+				<img src={stressedCommuterImage} alt="Urban commuter lifestyle" class="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity" />
 				<div class="absolute inset-0 flex items-center justify-center">
 					<div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
 						<Play size={20} fill="currentColor" />
 					</div>
 				</div>
-				<div class="absolute bottom-4 left-4 text-white text-sm font-medium">01. Our story</div>
+				<div class="absolute bottom-4 left-4 text-white text-sm font-medium">01. The daily stress problem</div>
 			</div>
 		</div>
 	</section>
@@ -85,219 +82,245 @@
 	<!-- Typography Section -->
 	<section class="container-custom mb-40">
 		<div class="flex flex-col text-7xl md:text-9xl font-medium tracking-tighter leading-none mb-24">
-			<span class="self-start">Mundane</span>
-			<span class="self-center my-4 md:my-8">made</span>
-			<span class="self-end">magic</span>
+			<span class="self-start">Recovery</span>
+			<span class="self-center my-4 md:my-8">without</span>
+			<span class="self-end">limits</span>
 		</div>
 
 		<div class="max-w-2xl mx-auto text-center">
 			<p class="text-lg text-gray-600 leading-relaxed">
-				Powered by state-of-the-art AI models and an ever-expanding Skill Library, Memo doesn't just know how to do a few tasks—Memo improves its skills faster than any robot that has come before it.
+				No appointments. No time limits. No guilt. Just unlimited access to medical-grade recovery equipment whenever you need it. Our unmanned operations keep costs low while maintaining the highest quality standards.
 			</p>
 		</div>
 	</section>
 
-	<!-- Feature 1: Kitchen -->
+	<!-- Feature 1: AI Massage Chairs -->
 	<section class="container-custom mb-24">
 		<div class="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-4 group">
-			<img src={kitchenImage} alt="Memo in kitchen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+			<img src={massageChairImage} alt="AI massage chair" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 			<div class="absolute inset-0 flex items-center justify-center">
-				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Memo works in the kitchen</h2>
+				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Medical-grade<br>AI massage chairs</h2>
 			</div>
-			<div class="absolute bottom-4 left-4 text-white/80 text-xs">Lightening the load</div>
+			<div class="absolute bottom-4 left-4 text-white/80 text-xs">Certified therapeutic equipment</div>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 			<div class="bg-gray-100 rounded-3xl p-8 flex items-end">
 				<p class="text-sm text-gray-600 leading-relaxed max-w-xs">
-					Memo can quietly and autonomously start loads of plates and delicate glasses, throw out food scraps, and load up your dishwasher before running it. Just like a tidy new one of the crew, so you can go take care of the things only you can do.
+					Every massage chair is medical-grade certified with AI-powered customization. Choose from deep tissue, relaxation, or recovery programs. Use them as long as you want, as often as you want—all included in your membership.
 				</p>
 			</div>
 			<div class="relative aspect-[4/3] rounded-3xl overflow-hidden">
-				<img src={robotArm} alt="Memo working" class="w-full h-full object-cover" />
-				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Smart loads at night</div>
+				<img src={relaxingWomanImage} alt="Relaxing in massage chair" class="w-full h-full object-cover" />
+				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Unlimited sessions, no time limits</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Feature 2: Homes -->
+	<!-- Feature 2: 24/7 Access -->
 	<section class="container-custom mb-24">
 		<div class="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-4 group">
-			<img src={homeImage} alt="Memo in home" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+			<img src={facilityExteriorImage} alt="CORELAX facility exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 			<div class="absolute inset-0 flex items-center justify-center">
-				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Memo works in<br>homes it's never seen</h2>
+				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Open 24/7<br>No appointments</h2>
 			</div>
-			<div class="absolute bottom-4 left-4 text-white/80 text-xs">A true home is different. Memo learns in yours.</div>
+			<div class="absolute bottom-4 left-4 text-white/80 text-xs">Access anytime, even at 3 AM</div>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 			<div class="bg-gray-100 rounded-3xl p-8 flex items-end md:col-span-1">
 				<p class="text-sm text-gray-600 leading-relaxed">
-					We believe Memo should be easy to use in the real world, starting autonomously out of the box. Hundreds of people in unique homes show Memo real world scenarios each day, so Memo can robustly handle the chaos of real life.
+					Traditional spas require appointments weeks in advance. CORELAX is always open. Check real-time availability on our app, walk in with your QR code, and start recovering immediately. Perfect for busy commuters.
 				</p>
 			</div>
 			<div class="relative aspect-[4/3] rounded-3xl overflow-hidden md:col-span-1">
-				<img src="https://images.unsplash.com/photo-1593349480506-8433634cdcbe?q=80&w=2670&auto=format&fit=crop" alt="Memo detail" class="w-full h-full object-cover" />
-				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Adapting to new spaces</div>
+				<img src={appImage} alt="CORELAX app" class="w-full h-full object-cover" />
+				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Real-time crowding status</div>
 			</div>
 			<div class="relative aspect-[4/3] rounded-3xl overflow-hidden md:col-span-1">
-				<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=2670&auto=format&fit=crop" alt="Memo detail" class="w-full h-full object-cover" />
-				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">02. Handling unexpected obstacles</div>
+				<img src={securityImage} alt="Security system" class="w-full h-full object-cover" />
+				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">02. AI-monitored security</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Feature 3: Learning -->
+	<!-- Feature 3: Oxygen Capsules -->
 	<section class="container-custom mb-32">
 		<div class="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-4 group">
-			<img src={learningImage} alt="Memo learning" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+			<img src={oxygenCapsuleImage} alt="Oxygen capsule" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 			<div class="absolute inset-0 flex items-center justify-center">
-				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Memo is always learning</h2>
+				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Premium oxygen<br>therapy</h2>
 			</div>
-			<div class="absolute bottom-4 left-4 text-white/80 text-xs">Teach old dogs new tricks.</div>
+			<div class="absolute bottom-4 left-4 text-white/80 text-xs">Advanced recovery technology</div>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 			<div class="bg-gray-100 rounded-3xl p-8 flex items-end md:col-span-1">
 				<p class="text-sm text-gray-600 leading-relaxed">
-					In December 2023, Memo had only one arm and learned its first task: arranging shoes. Today, Memo is trained on multiple skills in parallel. In October 2024, Memo learned to fold piles of laundry, handle glassware, and put a shirt on a hanger.
+					Our oxygen capsules provide concentrated oxygen therapy for deep recovery. Popular with athletes and busy professionals, they help reduce fatigue, improve sleep quality, and accelerate physical recovery. Available as an optional add-on to your membership.
 				</p>
 			</div>
 			<div class="relative aspect-[4/3] rounded-3xl overflow-hidden md:col-span-1">
-				<img src="https://images.unsplash.com/photo-1581092977092-28ebb64ebcc2?q=80&w=2670&auto=format&fit=crop" alt="Memo skill 1" class="w-full h-full object-cover" />
-				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Memo picking up laundry</div>
+				<img src={massageChairImage} alt="Recovery equipment" class="w-full h-full object-cover" />
+				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Combine with massage therapy</div>
 			</div>
 			<div class="relative aspect-[4/3] rounded-3xl overflow-hidden md:col-span-1">
-				<img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=2670&auto=format&fit=crop" alt="Memo skill 2" class="w-full h-full object-cover" />
-				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">02. Memo folding a shirt</div>
+				<img src={relaxingWomanImage} alt="Deep relaxation" class="w-full h-full object-cover" />
+				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">02. Complete recovery experience</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Technology Section (Sage Green) -->
-	<section class="bg-sage py-32">
+	<!-- Technology Section -->
+	<section class="bg-gray-50 py-32">
 		<div class="container-custom">
 			<div class="flex flex-col items-center text-center mb-16">
-				<h2 class="text-5xl md:text-7xl font-medium tracking-tight text-white mb-12 drop-shadow-sm">From imitation to intuition</h2>
+				<h2 class="text-5xl md:text-7xl font-medium tracking-tight text-dark mb-12">Unmanned,<br>but never unattended</h2>
 				
 				<div class="relative w-full max-w-4xl aspect-square md:aspect-[16/9] mb-12">
-					<img src={gloveImage} alt="Skill Capture Glove" class="w-full h-full object-contain mix-blend-multiply" />
+					<img src={securityImage} alt="AI security monitoring" class="w-full h-full object-cover rounded-2xl" />
 				</div>
 
 				<div class="max-w-2xl mx-auto mb-12">
 					<p class="text-xl text-gray-700 leading-relaxed">
-						Our Skill Capture Glove™ enables Memo to distill millions of human movements into its onboard AI, unlocking helpful home skills. What the glove does, Memo learns.
+						Our AI-powered monitoring system ensures safety and security 24/7. QR code entry keeps non-members out, while real-time surveillance protects members inside. Daily staff visits maintain pristine cleanliness standards.
 					</p>
 				</div>
 
 				<div class="relative w-full max-w-3xl aspect-video rounded-2xl overflow-hidden mb-12 bg-gray-800">
-					<img src={learningImage} alt="Video thumbnail" class="w-full h-full object-cover opacity-80" />
+					<img src={appImage} alt="CORELAX app interface" class="w-full h-full object-cover opacity-80" />
 					<div class="absolute inset-0 flex items-center justify-center">
 						<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
 							<Play size={24} fill="currentColor" />
 						</div>
 					</div>
-					<div class="absolute bottom-4 left-4 text-white text-xs font-medium">01. Skill Capture Glove in use</div>
+					<div class="absolute bottom-4 left-4 text-white text-xs font-medium">01. How the app works</div>
 				</div>
 
 				<div class="text-center max-w-md mx-auto text-sm text-gray-600 mb-8">
-					To date, we've logged over 2,000 hours in our Motion Vocabulary. This robust training is what makes Sunday Memo useful in yours.
+					Lower operating costs mean lower membership fees. We pass the savings from unmanned operations directly to you, making medical-grade recovery accessible to everyone.
 				</div>
 
 				<div class="flex gap-8 justify-center text-sm font-medium">
-					<a href="#" class="border-b border-gray-400 pb-0.5 hover:border-black transition-colors">Explore Technology</a>
-					<a href="#" class="border-b border-gray-400 pb-0.5 hover:border-black transition-colors">Become a Beta Pro</a>
+					<a href="#membership" class="border-b border-gray-400 pb-0.5 hover:border-black transition-colors">Join Now</a>
+					<a href="#locations" class="border-b border-gray-400 pb-0.5 hover:border-black transition-colors">Find a Location</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Design Section -->
-	<section class="py-32 bg-cream">
+	<!-- Membership Section -->
+	<section class="py-32 bg-white" id="membership">
 		<div class="container-custom">
 			<div class="text-center mb-16">
-				<h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-12">Designed for real<br>use</h2>
+				<h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-12">Simple pricing,<br>unlimited access</h2>
 				
-				<div class="inline-flex bg-white rounded-full p-1 shadow-sm border border-gray-100">
-					<button class="px-6 py-2 rounded-full bg-gray-100 text-sm font-medium">Features</button>
-					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">360°</button>
-					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">Anatomy</button>
+				<div class="inline-flex bg-gray-100 rounded-full p-1 shadow-sm border border-gray-200">
+					<button class="px-6 py-2 rounded-full bg-white text-sm font-medium shadow-sm">Monthly</button>
+					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">Annual</button>
 				</div>
 			</div>
 
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 				<!-- Card 1 -->
 				<div class="relative aspect-square rounded-3xl overflow-hidden group">
-					<img src={robotHead} alt="Privacy" class="w-full h-full object-cover" />
+					<img src={massageChairImage} alt="Massage chairs" class="w-full h-full object-cover" />
 					<div class="absolute inset-0 bg-black/40 p-8 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 						<div class="text-white">
-							<h3 class="font-bold mb-2">Your privacy is protected</h3>
-							<p class="text-xs leading-relaxed opacity-90">Memo is an autonomous robot that operates locally. Even through its remote operation features, we ensure strict privacy protocols, keeping your data safe within your home.</p>
+							<h3 class="font-bold mb-2">Medical-grade equipment</h3>
+							<p class="text-xs leading-relaxed opacity-90">All massage chairs and equipment are certified medical devices. We maintain the highest quality standards with daily professional cleaning.</p>
 						</div>
 					</div>
 				</div>
 
-				<!-- Card 2 -->
-				<div class="bg-[#e8e4dc] rounded-3xl p-8 flex flex-col justify-center">
-					<h3 class="font-medium text-lg mb-4">Safety for the whole family</h3>
-					<p class="text-sm text-gray-600 leading-relaxed">
-						With a full suite of sensors, active avoidance, and a lightweight body, Memo is safe for small members of the family.
-					</p>
+				<!-- Card 2 - Pricing -->
+				<div class="bg-dark text-white rounded-3xl p-8 flex flex-col justify-center">
+					<div class="text-5xl font-bold mb-2">¥1,960</div>
+					<p class="text-sm opacity-80 mb-6">per month (tax included)</p>
+					<h3 class="font-medium text-lg mb-4">Standard Membership</h3>
+					<ul class="text-sm space-y-2 opacity-90">
+						<li>✓ Unlimited massage chair access</li>
+						<li>✓ Vibration machines included</li>
+						<li>✓ 24/7 facility access</li>
+						<li>✓ No time limits</li>
+						<li>✓ Real-time app monitoring</li>
+					</ul>
 				</div>
 
 				<!-- Card 3 -->
-				<div class="relative aspect-square rounded-3xl overflow-hidden bg-orange-500">
-					<img src={robotDetail} alt="Detail" class="w-full h-full object-cover mix-blend-multiply opacity-80" />
-                    <div class="absolute bottom-8 right-8 w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
-                        <Plus size={20} />
+				<div class="relative aspect-square rounded-3xl overflow-hidden bg-gray-100">
+					<img src={oxygenCapsuleImage} alt="Oxygen capsule" class="w-full h-full object-cover" />
+                    <div class="absolute bottom-8 left-8 text-dark max-w-[200px]">
+                        <h3 class="font-bold text-sm mb-1">Oxygen Capsule Add-on</h3>
+                        <p class="text-xs opacity-80">Premium recovery therapy available as optional upgrade</p>
                     </div>
 				</div>
 
                 <!-- Card 4 -->
-				<div class="relative aspect-square rounded-3xl overflow-hidden">
-					<img src={robotWheel} alt="Wheels" class="w-full h-full object-cover" />
-                    <div class="absolute top-8 left-8 text-white max-w-[200px]">
-                        <h3 class="font-bold text-sm mb-1">Traverse your home</h3>
-                        <p class="text-[10px] opacity-80">Custom wheels allow Memo to navigate carpets and thresholds with ease.</p>
-                    </div>
-				</div>
-
-                 <!-- Card 5 -->
-				<div class="bg-[#dce3de] rounded-3xl p-8 flex flex-col justify-center">
-					<h3 class="font-medium text-lg mb-4">Simple, soft, and easy to clean</h3>
+				<div class="bg-gray-100 rounded-3xl p-8 flex flex-col justify-center">
+					<h3 class="font-medium text-lg mb-4">No appointments needed</h3>
 					<p class="text-sm text-gray-600 leading-relaxed">
-						Memo's face is soft to the touch, wipes clean, withstands bumps, and can be wiped down with any household cleaning product.
+						Check real-time availability on our app and walk right in. Perfect for spontaneous recovery sessions after work or late-night stress relief.
 					</p>
 				</div>
 
-                 <!-- Card 6 -->
+                <!-- Card 5 -->
 				<div class="relative aspect-square rounded-3xl overflow-hidden">
-					<img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=2670&auto=format&fit=crop" alt="Touch" class="w-full h-full object-cover" />
+					<img src={facilityExteriorImage} alt="Facility exterior" class="w-full h-full object-cover" />
+                    <div class="absolute top-8 left-8 text-white max-w-[200px]">
+                        <h3 class="font-bold text-sm mb-1">Prime locations</h3>
+                        <p class="text-xs opacity-90 drop-shadow">30 seconds from Mukogaoka-Yuen Station. More locations opening soon.</p>
+                    </div>
+				</div>
+
+                 <!-- Card 6 -->
+				<div class="bg-gray-100 rounded-3xl p-8 flex flex-col justify-center">
+					<h3 class="font-medium text-lg mb-4">Pre-registration discount</h3>
+					<p class="text-sm text-gray-600 leading-relaxed mb-4">
+						Lifetime 10% discount for early members. Lock in ¥1,782/month forever with our pre-registration plan.
+					</p>
+					<a href="#" class="text-sm font-medium border-b border-dark pb-0.5 hover:opacity-60 transition-opacity inline-block">Learn more</a>
 				</div>
 			</div>
             
             <div class="flex justify-center mt-12">
-                 <div class="inline-flex bg-white rounded-full p-1 shadow-sm border border-gray-100">
-					<button class="px-6 py-2 rounded-full bg-gray-100 text-sm font-medium">Features</button>
-					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">360°</button>
-					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">Anatomy</button>
-				</div>
+                 <button class="bg-dark text-white px-8 py-4 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
+					Start your membership
+				</button>
             </div>
 		</div>
 	</section>
 
-	<!-- Customization Section (Sky Blue) -->
-	<section class="bg-sky py-32">
+	<!-- Expansion Section -->
+	<section class="bg-gray-50 py-32" id="locations">
 		<div class="container-custom flex flex-col items-center text-center">
-			<div class="flex items-center justify-between w-full max-w-4xl mb-12">
-				<span class="text-sm font-medium text-gray-500">Memo wears many hats.</span>
-				<div class="w-32 h-32 md:w-48 md:h-48 text-black animate-spin-slow">
-					<svg viewBox="0 0 100 100" fill="currentColor" class="w-full h-full">
-						<path d="M50 0C58 0 65 7 65 15C65 23 58 30 50 30C42 30 35 23 35 15C35 7 42 0 50 0ZM85 15C93 15 100 22 100 30C100 38 93 45 85 45C77 45 70 38 70 30C70 22 77 15 85 15ZM85 55C93 55 100 62 100 70C100 78 93 85 85 85C77 85 70 78 70 70C70 62 77 55 85 55ZM50 70C58 70 65 77 65 85C65 93 58 100 50 100C42 100 35 93 35 85C35 77 42 70 50 70ZM15 55C23 55 30 62 30 70C30 78 23 85 15 85C7 85 0 78 0 70C0 62 7 55 15 55ZM15 15C23 15 30 22 30 30C30 38 23 45 15 45C7 45 0 38 0 30C0 22 7 15 15 15Z" />
-					</svg>
+			<h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-8">Expanding across<br>Japan</h2>
+			
+			<p class="text-lg text-gray-600 max-w-2xl mb-12">
+				We're building the future of wellness infrastructure. Scaling to 100 locations across Tokyo and major metropolitan areas.
+			</p>
+			
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl mb-12">
+				<div class="bg-white rounded-2xl p-8 text-left">
+					<h3 class="font-bold text-xl mb-4">Current Location</h3>
+					<p class="text-sm text-gray-600 mb-2">CORELAX Mukogaoka-Yuen</p>
+					<p class="text-xs text-gray-500 leading-relaxed">
+						Kanagawa Prefecture, Kawasaki City<br>
+						30 seconds from Mukogaoka-Yuen Station<br>
+						Odakyu Line
+					</p>
 				</div>
-				<span class="text-sm font-medium text-gray-500">Which should it wear next?</span>
+				
+				<div class="bg-dark text-white rounded-2xl p-8 text-left">
+					<h3 class="font-bold text-xl mb-4">Property Owners</h3>
+					<p class="text-sm opacity-90 mb-4">
+						Have a vacant property? Partner with us and receive 2 months' rent as referral fee.
+					</p>
+					<a href="#" class="text-sm font-medium border-b border-white/30 pb-0.5 hover:border-white transition-colors inline-block">
+						Learn more about partnerships
+					</a>
+				</div>
 			</div>
 			
-			<button class="bg-black text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
-				Cast your choice
+			<button class="bg-dark text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
+				View all locations
 			</button>
 		</div>
 	</section>
@@ -333,14 +356,14 @@
 </main>
 
 <!-- Footer -->
-<footer class="bg-neon-yellow pt-20 pb-8 rounded-t-[3rem] mt-[-2rem] relative z-10">
+<footer class="bg-gray-100 pt-20 pb-8 rounded-t-[3rem] mt-[-2rem] relative z-10">
 	<div class="container-custom">
 		<!-- Black CTA Box -->
 		<div class="bg-dark text-white rounded-3xl p-12 md:p-24 text-center mb-20 relative overflow-hidden">
 			<div class="relative z-10">
-				<h2 class="text-2xl md:text-4xl font-medium mb-8">We are hiring. Join our Founding Team. <span class="text-gray-400">Create robots. Demand parts. Blueprint.</span></h2>
-				<a href="#" class="inline-flex items-center border border-white/30 rounded-full px-6 py-2 hover:bg-white/10 transition-colors text-sm">
-					Apply to join <ArrowRight size={16} class="ml-2" />
+				<h2 class="text-2xl md:text-4xl font-medium mb-8">Ready to recover on your schedule? <span class="text-gray-400">Join thousands of urban professionals finding daily relief.</span></h2>
+				<a href="#membership" class="inline-flex items-center border border-white/30 rounded-full px-6 py-2 hover:bg-white/10 transition-colors text-sm">
+					Start your membership <ArrowRight size={16} class="ml-2" />
 				</a>
 			</div>
 		</div>
@@ -348,64 +371,57 @@
 		<!-- Footer Links -->
 		<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20 text-sm">
 			<div class="col-span-2 md:col-span-1">
-				<p class="mb-4">Get the latest news</p>
-				<form class="flex border-b border-black pb-2">
-					<input type="email" placeholder="Email address" class="bg-transparent border-none outline-none w-full placeholder-gray-600" />
+				<p class="mb-4 font-medium">Get updates</p>
+				<form class="flex border-b border-gray-400 pb-2">
+					<input type="email" placeholder="Email address" class="bg-transparent border-none outline-none w-full placeholder-gray-500" />
 					<button type="submit" class="font-medium">Subscribe</button>
 				</form>
 			</div>
 			
 			<div class="md:col-start-3">
-				<ul class="space-y-2">
-					<li><a href="#" class="hover:underline">Explore</a></li>
-					<li><a href="#" class="hover:underline">Technology</a></li>
-					<li><a href="#" class="hover:underline">Mission</a></li>
+				<ul class="space-y-2 text-gray-600">
+					<li><a href="#membership" class="hover:text-dark transition-colors">Membership</a></li>
+					<li><a href="#locations" class="hover:text-dark transition-colors">Locations</a></li>
+					<li><a href="#" class="hover:text-dark transition-colors">Equipment</a></li>
 				</ul>
 			</div>
 
 			<div>
-				<ul class="space-y-2">
-					<li><a href="#" class="hover:underline">Home</a></li>
-					<li><a href="#" class="hover:underline">Features</a></li>
-					<li><a href="#" class="hover:underline">Careers</a></li>
-					<li><a href="#" class="hover:underline">Beta Program</a></li>
+				<ul class="space-y-2 text-gray-600">
+					<li><a href="#" class="hover:text-dark transition-colors">About</a></li>
+					<li><a href="#" class="hover:text-dark transition-colors">Property Owners</a></li>
+					<li><a href="#" class="hover:text-dark transition-colors">Careers</a></li>
+					<li><a href="#" class="hover:text-dark transition-colors">Press</a></li>
 				</ul>
 			</div>
 
 			<div>
-				<ul class="space-y-2">
-					<li><a href="#" class="hover:underline">Press</a></li>
-					<li><a href="#" class="hover:underline">Instagram</a></li>
-					<li><a href="#" class="hover:underline">X (Twitter)</a></li>
-					<li><a href="#" class="hover:underline">YouTube</a></li>
+				<ul class="space-y-2 text-gray-600">
+					<li><a href="#" class="hover:text-dark transition-colors">Instagram</a></li>
+					<li><a href="#" class="hover:text-dark transition-colors">X (Twitter)</a></li>
+					<li><a href="#" class="hover:text-dark transition-colors">LINE</a></li>
+					<li><a href="#" class="hover:text-dark transition-colors">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<!-- Bottom Bar -->
-		<div class="flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-wider text-gray-800 border-t border-black/10 pt-8">
-			<div class="mb-4 md:mb-0">© 2024 Sunday Inc.</div>
+		<div class="flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-wider text-gray-600 border-t border-gray-300 pt-8">
+			<div class="mb-4 md:mb-0">© 2025 Dunkit株式会社 (CORELAX)</div>
 			<div class="flex gap-8">
-				<a href="#" class="hover:underline">Terms of Service</a>
-				<a href="#" class="hover:underline">Privacy and Cookies</a>
+				<a href="#" class="hover:text-dark transition-colors">Terms of Service</a>
+				<a href="#" class="hover:text-dark transition-colors">Privacy Policy</a>
 			</div>
 		</div>
         
         <div class="flex justify-center mt-16 mb-8">
             <div class="flex flex-col items-center gap-2">
-                <div class="text-[10px] uppercase tracking-widest text-center max-w-xs leading-relaxed">
-                    The future has arrived. Memo is watching out for right now.<br>
-                    Mountain View, CA · New York City, NY
+                <div class="text-xs text-center max-w-md leading-relaxed text-gray-600">
+                    Create the future starting today.<br>
+                    Building next-generation wellness infrastructure through unmanned stores.
                 </div>
-                <div class="mt-8">
-                    <div class="w-8 h-8 bg-black text-neon-yellow rounded-full flex items-center justify-center">
-                        <Plus size={20} />
-                    </div>
-                </div>
-                 <div class="mt-2">
-                    <div class="w-8 h-8 bg-black text-neon-yellow rounded-full flex items-center justify-center">
-                        <Plus size={20} />
-                    </div>
+                <div class="mt-6 text-[10px] text-gray-500">
+                    Tokyo, Minato-ku · Kawasaki, Tama Ward
                 </div>
             </div>
         </div>
